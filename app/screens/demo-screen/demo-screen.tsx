@@ -138,7 +138,7 @@ export const DemoScreen: React.FunctionComponent<DemoScreenProps> = props => {
         <Text style={TITLE} preset="header" tx="demoScreen.title" />
         <Text style={TAGLINE} tx="demoScreen.tagLine" />
         <BulletItem text="Load up Reactotron!  You can inspect your app, view the events, interact, and so much more!" />
-        <BulletItem text="Integrated here, Navigation with State, TypeScript, Storybook, Solidarity, and i18n." />
+        <BulletItem text="Integrated here, Navigation with State, TypeScript, Solidarity, and i18n." />
         <View>
           <Button
             style={DEMO}

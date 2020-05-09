@@ -7,7 +7,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint index.js app storybook test --fix --ext .js,.ts,.tsx",
+    "lint": "eslint index.js app test --fix --ext .js,.ts,.tsx",
     "compile": "tsc --noEmit -p . --pretty",
     "format": "npm-run-all format:*",
     "format:js": "prettier --write '**/*.js'",
@@ -20,7 +20,6 @@
     "patch": "patch-package",
     "postinstall": "node ./bin/postInstall",
     "prepare": "npm-run-all patch hack:*",
-    "storybook": "start-storybook -p 9001 -c ./storybook",
     "adb": "adb reverse tcp:9090 tcp:9090 && adb reverse tcp:3000 tcp:3000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:8081 tcp:8081"
   },
   "dependencies": {
@@ -52,9 +51,6 @@
     "@babel/plugin-proposal-decorators": "^7.0.0",
     "@babel/plugin-proposal-optional-catch-binding": "^7.0.0",
     "@babel/runtime": "^7.6.2",
-    "@storybook/addon-storyshots": "5.3.17",
-    "@storybook/react-native": "5.3.17",
-    "@storybook/react-native-server": "5.3.17",
     "@types/jest": "25.1.4",
     "@types/ramda": "0.26.44",
     "@types/react": "16.9.23",
@@ -98,7 +94,7 @@
       "/e2e"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(jest-)?react-native|react-native|@react-navigation|@storybook|@react-native-community)"
+      "node_modules/(?!(jest-)?react-native|react-native|@react-navigation|@react-native-community)"
     ]
   },
   "prettier": {

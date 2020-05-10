@@ -86,9 +86,9 @@ export const DemoScreen: React.FunctionComponent<DemoScreenProps> = props => {
 
   const demoReactotron = React.useMemo(
     () => async () => {
-      console.tron.log("Your Friendly tron log message")
-      console.tron.logImportant("I am important")
-      console.tron.display({
+      console.log("Your Friendly tron log message")
+      console.log("I am important")
+      console.log({
         name: "DISPLAY",
         value: {
           numbers: 1,

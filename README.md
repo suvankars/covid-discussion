@@ -6,7 +6,7 @@ Currently includes:
 
 - React Native
 - React Navigation
-- MobX State Tree
+- Redux and Redux saga
 - TypeScript
 - And more!
 
@@ -28,7 +28,6 @@ ignite-project
 │   ├── app.tsx
 ├── storybook
 │   ├── views
-│   ├── index.ts
 │   ├── storybook-registry.ts
 │   ├── storybook.ts
 ├── test
